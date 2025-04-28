@@ -2,4 +2,12 @@
 
 .container {
     padding: 12px;
+    display: flex;
+    flex-direction: column;
+
+    .contentContainer {
+        display: flex;
+        gap: 18px;
+        margin-top: 28px;
+    }
 }

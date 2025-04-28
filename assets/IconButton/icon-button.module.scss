@@ -1,0 +1,21 @@
+@use '@/styles/base/index' as *;
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    span {
+        font-weight: $font-weight-regular;
+        font-size: $font-size-base;
+    }
+
+    button {
+        background-color: $foreground-color;
+        border: none;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

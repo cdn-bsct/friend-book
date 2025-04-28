@@ -1,0 +1,28 @@
+@use '@/styles/base/index' as *;
+
+.listItemContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+
+    background-color: $foreground-color;
+    border: none;
+    padding: 10px;
+
+    &:hover {
+        cursor: pointer;
+
+        span {
+            color: $theme-color-secondary;
+        }
+    }
+
+    span {
+        font-size: $font-size-small;
+        font-weight: $font-weight-bold;
+        color: $theme-color-secondary-dark;
+    }
+
+
+}

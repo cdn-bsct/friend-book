@@ -1,0 +1,34 @@
+@use '@/styles/base/index' as *;
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-radius: 12px;
+    padding: 8px;
+    background-color: $foreground-color;
+    box-shadow: 1px 1px 5px $theme-color-primary-dark;
+    width: 15%;
+    height: calc(100vh - 10vh);
+
+    .iconGroup {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .profileImg {
+            width: 45px;
+            height: 45px;
+            border: 1px solid $text-primary;
+            border-radius: 50%;
+            background-color: $theme-color-tertiary;
+        }
+    }
+}
