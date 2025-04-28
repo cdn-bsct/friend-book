@@ -7,11 +7,13 @@
     gap: 20px;
 
     background-color: $foreground-color;
+    color: $theme-color-secondary-dark;
     border: none;
     padding: 10px;
 
     &:hover {
         cursor: pointer;
+        color: $theme-color-secondary;
 
         span {
             color: $theme-color-secondary;

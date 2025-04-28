@@ -1,9 +1,8 @@
 import { IconType } from 'react-icons';
 import styles from './list-icon-button.module.scss'
-import { ReactElement } from 'react';
 
 type ListIconButtonProps = {
-    icon: ReactElement;
+    icon: IconType;
     title: string;
     onClick: () => void;
 }
@@ -16,7 +15,7 @@ const ListIconButton = (props: ListIconButtonProps) => {
             className={styles.listItemContainer}
             onClick={onClick}
         >
-            {Icon}
+            <Icon size={18} />
             <span>{title}</span>
         </button>
     )

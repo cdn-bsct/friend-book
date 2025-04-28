@@ -3,42 +3,47 @@ import ListIconButton from '@/assets/ListIconButton/list-icon-button';
 import styles from './sidebar.module.scss'
 import { ActivityIcon, CameraIcon, FriendsIcon, GroupIcon, HomeIcon, LogOutIcon, UserIcon } from '../icons/icons';
 import IconButton from '@/assets/IconButton/icon-button';
-import { AppColours, FontWeight } from '@/utils/font-util';
+import { AppColours } from '@/utils/font-util';
 
 const Sidebar = () => {
+    const menuOptions = [
+        {
+            icon: HomeIcon,
+            title: 'Home',
+            onClick: () => alert('Home button'),
+        },
+        {
+            icon: UserIcon,
+            title: 'Profile',
+            onClick: () => alert('Profile button'),
+        },
+        {
+            icon: ActivityIcon,
+            title: 'Activity',
+            onClick: () => alert('Activity button'),
+        },
+        {
+            icon: FriendsIcon,
+            title: 'Friends',
+            onClick: () => alert('Friends button'),
+        },
+        {
+            icon: CameraIcon,
+            title: 'Photos',
+            onClick: () => alert('Photos button'),
+        },
+        {
+            icon: GroupIcon,
+            title: 'Groups',
+            onClick: () => alert('Groups button'),
+        },
+    ];
     return (
         <div className={styles.container}>
             <div className={styles.iconGroup}>
-                <ListIconButton
-                    icon={<HomeIcon size={18} className={styles.icon} />}
-                    title="Home"
-                    onClick={() => alert('home button')}
-                />
-                <ListIconButton
-                    icon={<UserIcon size={18} className={styles.icon} />}
-                    title="Profile"
-                    onClick={() => alert('profile button')}
-                />
-                <ListIconButton
-                    icon={<ActivityIcon size={18} className={styles.icon} />}
-                    title="Activity"
-                    onClick={() => alert('activity button')}
-                />
-                <ListIconButton
-                    icon={<FriendsIcon size={18} className={styles.icon} />}
-                    title="Friends"
-                    onClick={() => alert('friends button')}
-                />
-                <ListIconButton
-                    icon={<CameraIcon size={18} className={styles.icon} />}
-                    title="Photos"
-                    onClick={() => alert('photos button')}
-                />
-                <ListIconButton
-                    icon={<GroupIcon size={18} className={styles.icon} />}
-                    title="Groups"
-                    onClick={() => alert('groups button')}
-                />
+                {menuOptions.map(opt => (
+                    <ListIconButton title={opt.title} onClick={opt.onClick} icon={opt.icon} />
+                ))}
             </div>
 
             <div className={styles.footer}>
