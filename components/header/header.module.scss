@@ -1,0 +1,8 @@
+@use '@/styles/base/index' as *;
+
+.container {
+    height: 24px;
+    display: flex;
+    background-color: $theme-color-primary;
+    color: $text-primary;
+}
