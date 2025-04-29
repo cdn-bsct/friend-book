@@ -8,31 +8,37 @@ import { AppColours } from '@/utils/font-util';
 const Sidebar = () => {
     const menuOptions = [
         {
+            key: '1',
             icon: HomeIcon,
             title: 'Home',
             onClick: () => alert('Home button'),
         },
         {
+            key: '2',
             icon: UserIcon,
             title: 'Profile',
             onClick: () => alert('Profile button'),
         },
         {
+            key: '3',
             icon: ActivityIcon,
             title: 'Activity',
             onClick: () => alert('Activity button'),
         },
         {
+            key: '4',
             icon: FriendsIcon,
             title: 'Friends',
             onClick: () => alert('Friends button'),
         },
         {
+            key: '5',
             icon: CameraIcon,
             title: 'Photos',
             onClick: () => alert('Photos button'),
         },
         {
+            key: '6',
             icon: GroupIcon,
             title: 'Groups',
             onClick: () => alert('Groups button'),
@@ -42,7 +48,7 @@ const Sidebar = () => {
         <div className={styles.container}>
             <div className={styles.iconGroup}>
                 {menuOptions.map(opt => (
-                    <ListIconButton title={opt.title} onClick={opt.onClick} icon={opt.icon} />
+                    <ListIconButton key={opt.key} title={opt.title} onClick={opt.onClick} icon={opt.icon} />
                 ))}
             </div>
 

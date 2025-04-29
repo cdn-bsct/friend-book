@@ -9,5 +9,12 @@
         display: flex;
         gap: 18px;
         margin-top: 28px;
+
+        .mainSection {
+            display: flex;
+            flex-direction: column;
+            height: calc(100vh - 10vh);
+            width: 60%;
+        }
     }
 }

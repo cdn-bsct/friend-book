@@ -1,6 +1,7 @@
 import Header from '@/components/header/header';
 import styles from './page-layout.module.scss'
 import Sidebar from '@/components/sidebar/sidebar';
+import NewPostComponent from '@/components/new-post/new-post';
 
 const PageLayout = ({
   children,
@@ -12,7 +13,10 @@ const PageLayout = ({
       <Header />
       <div className={styles.contentContainer}>
         <Sidebar />
-        {children}
+        <div className={styles.mainSection}>
+          <NewPostComponent />
+          {children}
+        </div>
       </div>
     </div>
   )

@@ -1,0 +1,57 @@
+@use '@/styles/base/index' as *;
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 15%;
+    background-color: $foreground-color;
+    border-radius: 12px;
+    box-shadow: 1px 1px 5px $theme-color-primary-dark;
+
+    padding: 12px;
+
+    .topSection,
+    .bottomSection {
+        height: 50%;
+        width: 100%;
+    }
+
+    .divider {
+        height: 1px;
+        background-color: $theme-color-secondary-dark;
+        width: 90%;
+        margin: 10px;
+    }
+
+    .topSection {
+        display: flex;
+        gap: 24px;
+        align-items: center;
+
+        .iconSection {
+            display: flex;
+            justify-content: center;
+            width: 15%;
+        }
+
+        .textSection {
+            display: flex;
+            justify-content: flex-start;
+            width: 85%;
+
+            textarea {
+                width: 96%;
+            }
+        }
+
+        .profileIcon {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            background-color: $theme-color-tertiary;
+        }
+    }
+
+
+}
