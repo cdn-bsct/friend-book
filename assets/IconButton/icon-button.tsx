@@ -26,7 +26,9 @@ const IconButton = (props: IconButtonProps) => {
                     </div>
                 )
             ) : (
-                <button onClick={onClick}>{Icon}</button>
+                <div className={styles.container}>
+                    <button onClick={onClick}>{Icon}</button>
+                </div>
             )}
         </div>
     )

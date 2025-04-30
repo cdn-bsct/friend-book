@@ -2,6 +2,7 @@ import Header from '@/components/header/header';
 import styles from './page-layout.module.scss'
 import Sidebar from '@/components/sidebar/sidebar';
 import NewPostComponent from '@/components/new-post/new-post';
+import FriendsListComponent from '@/components/friends-list/friends-list';
 
 const PageLayout = ({
   children,
@@ -17,6 +18,7 @@ const PageLayout = ({
           <NewPostComponent />
           {children}
         </div>
+        <FriendsListComponent />
       </div>
     </div>
   )

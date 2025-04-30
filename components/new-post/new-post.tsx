@@ -1,4 +1,5 @@
 import styles from './new-post.module.scss'
+import PostComponent from './post-component/post-component';
 
 const NewPostComponent = () => {
     return (
@@ -8,7 +9,8 @@ const NewPostComponent = () => {
                     <div className={styles.profileIcon} />
                 </div>
                 <div className={styles.textSection}>
-                    <textarea />
+                    {/* <textarea /> */}
+                    <PostComponent />
                 </div>
             </div>
             <div className={styles.divider} />

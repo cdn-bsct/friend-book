@@ -1,0 +1,19 @@
+@use '@/styles/base/index.scss' as *;
+
+.container {
+    width: 96%;
+    height: 42px;
+    border: 1px solid $theme-color-primary-dark;
+    border-radius: 20px;
+    background-color: $theme-color-tertiary;
+
+    .innerButton {
+        display: flex;
+        align-items: center;
+        padding: 6px 12px;
+        gap: 12px;
+        font-size: $font-size-lg;
+        font-weight: $font-weight-regular;
+        color: $text-grey;
+    }
+}

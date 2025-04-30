@@ -1,0 +1,48 @@
+@use '@/styles/base/index' as *;
+
+.container {
+    width: 15%;
+    border: 1px solid $text-primary;
+    border-radius: 12px;
+    padding: 8px 12px;
+    background-color: $foreground-color;
+
+    display: flex;
+    flex-direction: column;
+
+    .headerContainer {
+        display: flex;
+        flex-direction: column;
+
+        .header {
+            font-weight: $font-weight-bold;
+            font-size: $font-size-base;
+            margin: 5px 0px;
+        }
+
+        .divider {
+            height: 1px;
+            width: 96%;
+            background-color: $theme-color-secondary-dark;
+            align-self: center;
+            margin-bottom: 10px;
+        }
+    }
+
+    .listItem {
+        display: flex;
+        gap: 12px;
+        padding: 3px 0px;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid $theme-color-secondary-dark;
+
+        .nameAndStatus {
+            display: flex;
+            align-items: center;
+            font-weight: $font-weight-bold;
+        }
+
+    }
+
+}

@@ -9,6 +9,7 @@ export {
     TbMessageCircle as MessageIcon,
     TbMessage2 as ActivityIcon,
     TbCamera as CameraIcon,
+    TbEdit as EditIcon,
 } from 'react-icons/tb'
 
 export { LiaUserFriendsSolid as FriendsIcon } from 'react-icons/lia'
@@ -16,3 +17,5 @@ export { LiaUserFriendsSolid as FriendsIcon } from 'react-icons/lia'
 export {
     GrGroup as GroupIcon,
 } from 'react-icons/gr'
+
+export { BsDot as StatusIcon } from "react-icons/bs";
